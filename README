@@ -1,0 +1,47 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Daniel Domalik, 0933553  |  10/22/2018  |  CIS3210 - Asssignment #2
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Compiling:
+    A Makefile is provided, type make/make all in order to
+    compile the TCPserver.c and TCPclient.c programs.
+    TCPserver.c -> server
+    TCPclient.c -> client
+
+Running server:
+    In order to run server you must type:
+    ./server [port-number]
+
+    The port I am assigned is 12016, so:
+    ./server 12016
+
+Running client:
+    In order to run client you must type:
+    ./client [ip-address:port-number] [chunk-size] [file-path]
+
+    Please note the [chunk-size] parameter is optional. The
+    program will default to chunk sizes of 4096 bytes.
+
+Reasoning behind file-naming convention:
+    If a duplicate file is found in the same directory, an
+    underscore and a number will be appended to the end of
+    the filename.
+
+    For example:
+
+        Duplicate cat.txt
+        cat_(#).txt
+
+Running script:
+    In order to run the script you must type:
+    bash multi_client.bash
+
+    This will open 5 xterm terminals, execute the ./client
+    command with wonderland.txt and then close the 5 xterm
+    terminals, printing the output to the parent terminal.
+
+Cleaning up:
+    In order to clean up the directory simply type:
+    make clean
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
